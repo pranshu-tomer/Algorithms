@@ -16,22 +16,13 @@ function Footer() {
 
           <div className="flex space-x-6">
             <a
-              href="https://github.com/your-repo"
+              href="https://github.com/HimanshuKumar1234/Algo-Vizualizer"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-transform transform hover:scale-110"
               aria-label="GitHub"
             >
               <Github className="w-5 h-5" />
-            </a>
-            <a
-              href="https://twitter.com/yourhandle"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-300 transition-transform transform hover:scale-110"
-              aria-label="Twitter"
-            >
-              <Twitter className="w-5 h-5" />
             </a>
           </div>
         </div>
