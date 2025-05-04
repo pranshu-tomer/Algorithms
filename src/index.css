@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+  @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-600 text-white hover:bg-secondary-700;
+  }
+  
+  .btn-outline {
+    @apply border border-gray-300 bg-white hover:bg-gray-50 text-gray-700 dark:border-gray-600 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-200;
+  }
+
+  .btn-sm {
+    @apply px-3 py-1 text-sm;
+  }
+
+  .btn-disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
+  .container-sm {
+    @apply max-w-3xl mx-auto px-4;
+  }
+
+  .container-md {
+    @apply max-w-4xl mx-auto px-4;
+  }
+
+  .container-lg {
+    @apply max-w-6xl mx-auto px-4;
+  }
+
+  .array-bar {
+    @apply bg-primary-500 rounded-t-sm transition-all duration-200;
+  }
+
+  .array-bar-sorted {
+    @apply bg-success-500;
+  }
+
+  .array-bar-comparing {
+    @apply bg-accent-500;
+  }
+
+  .array-bar-swapping {
+    @apply bg-error-500;
+  }
+
+  .node {
+    @apply w-8 h-8 flex items-center justify-center rounded-full border transition-colors duration-200;
+  }
+
+  .node-default {
+    @apply bg-white border-gray-300 text-gray-700 dark:bg-gray-800 dark:border-gray-600 dark:text-gray-300;
+  }
+
+  .node-visited {
+    @apply bg-secondary-200 border-secondary-400 text-secondary-800 dark:bg-secondary-800 dark:border-secondary-600 dark:text-secondary-200;
+  }
+
+  .node-path {
+    @apply bg-success-200 border-success-400 text-success-800 dark:bg-success-800 dark:border-success-600 dark:text-success-200;
+  }
+
+  .node-source {
+    @apply bg-primary-200 border-primary-400 text-primary-800 dark:bg-primary-800 dark:border-primary-600 dark:text-primary-200;
+  }
+
+  .node-target {
+    @apply bg-accent-200 border-accent-400 text-accent-800 dark:bg-accent-800 dark:border-accent-600 dark:text-accent-200;
+  }
+
+  .edge {
+    @apply stroke-gray-400 stroke-2 transition-colors duration-200;
+  }
+
+  .edge-visited {
+    @apply stroke-secondary-500;
+  }
+
+  .edge-path {
+    @apply stroke-success-500;
+  }
+}
