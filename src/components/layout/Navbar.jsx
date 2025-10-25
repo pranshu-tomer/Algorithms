@@ -20,7 +20,7 @@ function Navbar({ darkMode, toggleDarkMode }) {
           <div className="flex items-center">
             <Link to="/" className="flex items-center" onClick={closeMenu}>
               <span className="text-xl font-semibold text-primary-600 dark:text-primary-400">
-                AlgoViz
+                StructView
               </span>
             </Link>
           </div>

@@ -16,7 +16,7 @@ function Footer() {
 
           <div className="flex space-x-6">
             <a
-              href="https://github.com/HimanshuKumar1234/Algo-Vizualizer"
+              href="https://github.com/pranshu-tomer/Algorithms"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-transform transform hover:scale-110"
@@ -28,7 +28,7 @@ function Footer() {
         </div>
 
         <div className=" text-center text-xs text-gray-400 dark:text-gray-500">
-          <span className="font-bold">Algorithm Visualizer</span>. Built with ❤️ by Himanshu
+          <span className="font-bold">Algorithm Visualizer</span>. Built with ❤️ by Pranshu
         </div>
       </div>
     </footer>
